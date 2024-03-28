@@ -9,6 +9,8 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: rgb(30, 28, 48);
+    color: white;
 }
 
 .tabs {
@@ -17,23 +19,25 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
 }
 
 .tab {
     cursor: pointer;
     padding: 10px;
+    color: white;
 }
 
 .tab.active {
-    background-color: #CCC;
+    background-color: #4a4a4a;
 }
 
 .tab:hover {
-    background-color: #AAA;
+    background-color: #717171;
 }
 
 .tab-content {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
 }
