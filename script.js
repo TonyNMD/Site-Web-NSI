@@ -14,3 +14,8 @@ tabs.forEach(tab => {
         target.classList.add('active')
     })
 })
+
+function affiche_commentaire(formulaire) {
+    var commentaire = document.formulaire.input_commentaire.value;
+    document.getElementById("txt_commentaire").innerHTML = " → " + commentaire
+}
