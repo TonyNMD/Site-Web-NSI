@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
 [data-tab-content] {
     display: none;
 }
@@ -9,8 +11,10 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(30, 28, 48);
-    color: white;
+    background-color: hsl(220, 100%, 97%);
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 .tabs {
@@ -19,25 +23,36 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1.5px solid white;
+    background-color: hsl(220, 24%, 12%);
+    font-weight: 600;
 }
 
 .tab {
     cursor: pointer;
     padding: 10px;
     color: white;
-}
-
-.tab.active {
-    background-color: #4a4a4a;
-}
-
-.tab:hover {
-    background-color: #717171;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .tab-content {
-    margin-left: 100px;
-    margin-right: 100px;
-    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(220, 24%, 12%);
+}
+
+.logo {
+    cursor: pointer;
+    padding: 10px;
+    color: black;
+    padding-right: 100px;
 }
