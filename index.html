@@ -1,135 +1,147 @@
 <!DOCTYPE html>
+
 <html>
-<head>
 
-	<meta charsets="utf-8"></meta>
-	<title>Les Systèmes d'exploitation</title>
-	<link rel="shortcut icon" type="x-icon" href="icon.png">
-	<script src="script.js" defer></script>
-	<link href="styles.css" rel="stylesheet">
+    <head>
 
-</head>
+        <meta charsets="utf-8"></meta>
+        <title>Les Systèmes d'exploitation</title> <!-- Nom du site -->
+        <link rel="shortcut icon" type="x-icon" href="icon.png"> <!-- Icon du site -->
+        <script src="script.js" defer></script>
+        <link href="styles.css" rel="stylesheet">
 
-<body>
-    <ul class="tabs">
+    </head>
 
-        <li data-tab-target="#accueil" class="logo"><img src="lipps_logo.png" width="55%"></li>
-    	<li data-tab-target="#accueil" class="active tab">Accueil</li>
-		<li data-tab-target="#windows" class="tab">Windows</li>
-		<li data-tab-target="#linux" class="tab">Linux</li>
-		<li data-tab-target="#macos" class="tab">macOS</li>
-		<li data-tab-target="#sources" class="tab">Sources</li>
+    <body>
 
-    </ul>
+        <ul class="tabs"> <!-- Le menu qui permet l'accès aux différentes pages -->
 
-    <div class="tab-content">
+            <li data-tab-target="#accueil" class="logo"><img src="lipps_logo.png" width="55%"></li> <!-- Permet l'accès à l'accueil en cliquant sur le logo -->
+            <li data-tab-target="#accueil" class="active tab">Accueil</li>
+            <li data-tab-target="#windows" class="tab">Windows</li>
+            <li data-tab-target="#linux" class="tab">Linux</li>
+            <li data-tab-target="#macos" class="tab">macOS</li>
+            <li data-tab-target="#sources" class="tab">Sources</li>
 
-    	<div id="accueil" data-tab-content class="active">
-
-            <h1 align="center"><strong>Les Systèmes d'exploitation</strong></h1>
-			
-            <h2>Accueil</h2>
-			
-            <h3>Qu'est-ce qu'un Système d'Exploitation ?</h3>
-            
-            <p>Un système d'exploitation, souvent abrégé "OS" (Operating System, anglais pour système d'exploitation), est un logiciel essentiel pour tout ordinateur. Il agit comme un chef d'orchestre, coordonnant l'utilisation des différentes ressources de l'ordinateur par les logiciels applicatifs.</p>
-            <p>Lorsque vous utilisez un programme sur votre ordinateur, comme un navigateur web ou un logiciel de traitement de texte, celui-ci communique avec le système d'exploitation pour accéder à la mémoire, au processeur, aux périphériques, etc. Le système d'exploitation gère ces demandes et assure que les ressources sont utilisées de manière efficace, sans interférer les unes avec les autres.</p>
-            <p>En plus de permettre aux programmes de fonctionner, le système d'exploitation offre une gamme de services généraux qui facilitent la création et l'utilisation des logiciels applicatifs. Ces services incluent l'exécution de programmes, la manipulation de fichiers, la communication entre ordinateurs et la détection et gestion des erreurs.</p>
-            <p>Il existe de nombreux systèmes d'exploitation sur le marché, chacun avec ses propres fonctionnalités et adapté à différents types d'appareils, tels que les ordinateurs personnels, les smartphones et les tablettes. Les plus populaires incluent Windows, macOS et Linux.</p>
-                        
-            <h3>Histoire et Fonctionnement des Systèmes d'Exploitation</h3>
-
-            <p>Les systèmes d'exploitation (OS) sont des logiciels essentiels qui dirigent l'utilisation des ressources d'un ordinateur par les programmes. Leur histoire remonte aux premiers ordinateurs des années 1940 et a évolué avec l'avancement de la technologie.</p>
-            <p>Au départ, les premiers ordinateurs ne possédaient pas de système d'exploitation. Les programmes étaient exécutés directement sur le matériel, nécessitant une intervention humaine pour chaque tâche. Mais avec l'arrivée des circuits électroniques dans les années 1960, les systèmes d'exploitation rudimentaires sont apparus, permettant l'exécution simultanée de plusieurs programmes.</p>
-            <p>Un jalon important a été la création de UNIX en 1969, un système d'exploitation multitâche et multi-utilisateurs, inspirant de nombreux autres systèmes. Les années 1980 ont vu l'essor des micro-ordinateurs et l'émergence de systèmes comme CP/M et MS-DOS, suivis par les interfaces graphiques introduites par Xerox et popularisées par Apple avec le Macintosh.</p>
-            <p>Dans les années 1990, le concept de licence libre est apparu avec GNU/Linux, développé par des bénévoles inspirés par Richard Stallman et Linus Torvalds. Ce modèle a permis l'émergence de systèmes d'exploitation libres et ouverts, offrant une alternative aux solutions propriétaires.</p>
-            <p>Le cœur d'un système d'exploitation est son noyau, qui contrôle l'accès aux ressources matérielles et fournit des services essentiels aux programmes. Il existe différents types de noyaux, tels que les monolithiques, les à micronoyau et les hybrides, chacun avec ses propres avantages et inconvénients.</p>
-            <p>Les systèmes d'exploitation fonctionnent selon le principe de la machine virtuelle, créant une abstraction entre le matériel et les logiciels applicatifs. Ils permettent aux utilisateurs de tirer le meilleur parti de leur matériel informatique en fournissant une interface conviviale et en gérant les ressources de manière efficace.</p>
-            <p>Voici un schéma simple du fonctionnement des systèmes d'exploitation (source : Wikipédia) :</p>
-            <p align="center"><img src="schema_OS.png" width="20%"></p>
-
-            <h3>Les Deux Types de Systèmes d'Exploitation</h3>
-
-            <p><strong>Système d'exploitation propriétaire</strong></p>
-            <p>Un système d'exploitation propriétaire est un logiciel dont la conception, le développement et la distribution sont contrôlés par une entreprise spécifique. Ces entreprises, telles que Microsoft avec son système d'exploitation Windows et Apple avec macOS, détiennent les droits exclusifs sur leur système d'exploitation.</p>
-            <p>Les utilisateurs doivent généralement acheter une licence pour utiliser ces systèmes d'exploitation, ce qui leur donne accès à des fonctionnalités spécifiques et à des mises à jour fournies par l'entreprise propriétaire. Les utilisateurs n'ont pas accès au code source (ou "source code" en anglais) du système d'exploitation, ce qui signifie qu'ils ne peuvent pas le modifier ou le distribuer librement.</p>
-            
-            <p><strong>Système d'exploitation libre</strong></p>
-            <p>Un système d'exploitation libre, en revanche, est un logiciel dont le code source est disponible publiquement et peut être modifié, distribué et utilisé librement par quiconque. Les exemples de systèmes d'exploitation libres les plus connus sont Linux et les différentes distributions basées sur Linux, telles que Ubuntu, Fedora et Debian.</p>
-            <p>Les utilisateurs de systèmes d'exploitation libres ont la liberté de modifier le code source selon leurs besoins, de distribuer ces modifications et même de les partager avec d'autres. Cela permet une plus grande flexibilité et une personnalisation selon les préférences individuelles des utilisateurs.</p>
-
-		</div>
-
-	<div id="windows" data-tab-content>
-
-		<h2>Microsoft Windows : Un Système d'Exploitation Propriétaire pour Ordinateurs</h2>
-
-		<p>Microsoft Windows, souvent simplement appelé Windows, est un système d'exploitation développé par Microsoft pour les ordinateurs personnels. Il fournit une interface graphique conviviale qui permet aux utilisateurs d'interagir avec leur ordinateur de manière intuitive.</p>
-        <p align="center"><img src="Windows_logo.png" width="25%"></p>
-        <p>L'histoire de Windows remonte aux premières versions qui étaient essentiellement des extensions graphiques de MS-DOS, le système d'exploitation dominant à l'époque. Au fil du temps, Windows a évolué pour devenir un système d'exploitation complet, offrant une large gamme de fonctionnalités et de services.</p>
-        <p>Les premières versions de Windows, comme Windows 3 (sorti le 22 mai 1990) et Windows 95 (sorti le 24 août 1995), ont introduit des fonctionnalités telles que le multitâche et le support des pilotes de périphériques, ce qui a contribué à populariser l'utilisation des ordinateurs personnels.</p>
-        <p>Au fil des ans, de nouvelles versions de Windows ont été développées pour répondre aux besoins changeants des utilisateurs et aux avancées technologiques. Des versions comme Windows XP, Windows 7, Windows 8 et Windows 10 ont apporté des améliorations significatives en termes de sécurité, de performances et de convivialité.</p>
-        <p>Windows est largement utilisé dans le monde entier et est préinstallé sur la plupart des ordinateurs personnels vendus sur le marché. Il offre une plateforme stable et fiable pour exécuter une variété d'applications et de programmes, qu'il s'agisse de naviguer sur Internet, de traiter des documents ou de jouer à des jeux.</p>
-        <p>Windows est payant parce qu'il s'agit d'un produit développé par Microsoft, une entreprise qui investit des ressources considérables dans la conception, le développement et la maintenance du système d'exploitation. Ces investissements comprennent la recherche et le développement, le support technique, les mises à jour de sécurité et les nouvelles fonctionnalités.</p>
-        <p>Pour financer ces efforts, Microsoft vend des licences pour l'utilisation de Windows. Lorsque vous achetez un ordinateur équipé de Windows préinstallé ou lorsque vous achetez une copie de Windows pour installer sur votre ordinateur, vous payez pour cette licence d'utilisation. Cette licence vous donne le droit d'utiliser Windows sur votre ordinateur, ainsi que le droit de bénéficier du support technique et des mises à jour fournies par Microsoft.</p>
-
-	</div>
-
-	<div id="linux" data-tab-content>
-
-		<h2>Linux : Un Système d'Exploitation Flexible et Ouvert</h2>
-
-		<p>Linux est un système d'exploitation open source qui fonctionne comme le cerveau d'un ordinateur. Il est basé sur le noyau Linux et a été créé en 1991 par Linus Torvalds, un étudiant finlandais, afin de répondre au projet de Richard Stallman de développer un système d'exploitation libre. Ce système d'exploitation est très flexible et peut être utilisé sur différents types d'appareils, comme les ordinateurs, les serveurs, les téléphones portables et même les superordinateurs.</p>
-        <p align="center"><img src="GNU-Linux_logo.png" width="20%"></p>
-        <p>À l'origine, Linux était conçu pour les ordinateurs compatibles PC, mais il est devenu très populaire et est maintenant utilisé dans de nombreux appareils électroniques. Par exemple, le système d'exploitation Android, utilisé sur la plupart des smartphones et tablettes, est basé sur le noyau Linux.</p>
-        <p>La particularité de Linux est qu'il est open source, ce qui signifie que son code source est disponible gratuitement pour tout le monde. Cela permet à quiconque de le modifier et de le distribuer librement, favorisant ainsi la collaboration et l'innovation.</p>
-        <p>Linux est souvent associé au mouvement du logiciel libre, qui promeut la liberté d'utilisation, de modification et de distribution des logiciels. En utilisant Linux, les utilisateurs bénéficient de quatre libertés fondamentales : la liberté d'utiliser, d'étudier, de modifier et de distribuer le logiciel.</p>
-        <p>En résumé, Linux est un système d'exploitation flexible et open source qui peut être utilisé sur divers appareils électroniques. Son code source ouvert encourage la collaboration et l'innovation, et il est associé au mouvement du logiciel libre, promouvant la liberté d'utilisation et de distribution des logiciels.</p>
-
-	</div>
-
-	<div id="macos" data-tab-content>
-
-        <h2>macOS : Le Système d'Exploitation Intuitif d'Apple</h2>
-
-        <p>macOS est un système d'exploitation développé par Apple, disponible sur les ordinateurs Mac depuis 1998. Il est conçu pour offrir une expérience informatique fluide et intuitive aux utilisateurs d'ordinateurs Mac.</p>
-        <p align="center"><img src="macOS_logo.png" width="15%"></p>
-        <p>Les versions les plus récentes de macOS incluent macOS Sonoma, macOS Ventura et macOS Monterey. Elles proposent des fonctionnalités avancées et une intégration transparente avec d'autres produits Apple tels que iOS, iPadOS, watchOS et tvOS.</p>
-        <p>macOS repose sur une base Unix, ce qui lui confère stabilité et sécurité. Il est le successeur de Mac OS Classic, offrant une interface utilisateur moderne et des performances optimisées.</p>
-        <p>Grâce à son architecture robuste, macOS est adapté à une utilisation personnelle et professionnelle. Il prend en charge une large gamme de logiciels et offre des outils intégrés pour la création de contenu, la productivité et bien plus encore.</p>
-        <p>Avec macOS, les utilisateurs bénéficient d'une expérience informatique cohérente et fiable, soutenue par l'écosystème Apple et une communauté de développeurs dynamique.</p>
-        <p>macOS est payant car Apple investit énormément dans la recherche, le développement et la maintenance de macOS pour garantir une expérience utilisateur de haute qualité. Ces investissements comprennent l'amélioration des fonctionnalités, la sécurité, les mises à jour logicielles et le support client.</p>
-        <p>L'achat de macOS contribue à soutenir le modèle économique d'Apple, qui repose en partie sur la vente de logiciels et de matériel. En payant pour macOS, les utilisateurs ont accès à un système d'exploitation fiable et évolutif, ainsi qu'à un ensemble d'outils et de services intégrés qui optimisent l'expérience utilisateur sur les appareils Apple.</p>
-
-    </div>
-
-    <div id="sources" data-tab-content>
-
-        <h2>Sources</h2>
-
-        <ul>
-            <li><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation">Wikipédia : Système d'exploitation</a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Microsoft_Windows">Wikipédia : Microsoft Windows</a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Linux">Wikipédia : Linux</a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/MacOS">Wikipédia : macOS</a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire">Wikipédia : Logiciel propriétaire</a></li>
-            <li><a href="https://fr.wikipedia.org/wiki/Logiciel_libre">Wikipédia : Logiciel libre</a></li>
-            <li>Le cours de NSI</li>
         </ul>
 
-    </div>
+        <div class="tab-content">
 
-    <h2>Section Commentaires</h2>
+            <div id="accueil" data-tab-content class="active"> <!-- L'accueil est toujours la premiere page qu'on voit lorsque qu'on va sur le site -->
 
-    <form name="formulaire">
-        <p>
-            <label>Commentaire :</label>
-            <input type="text" name="input_commentaire"/>
-            <input type="button" value="Valider" onClick="affiche_commentaire(formulaire)"/>
-        </p>
-    </form>
+                <h1 align="center"><strong>Les Systèmes d'exploitation</strong></h1>
 
-    <p id="txt_commentaire"></p>
+                <h2>Accueil</h2>
 
-</body>
+                <h3>Qu'est-ce qu'un Système d'Exploitation ?</h3>
+
+                <p>Un système d'exploitation, souvent abrégé "OS" (Operating System, anglais pour système d'exploitation), est un logiciel essentiel pour tout ordinateur. Il agit comme un chef d'orchestre, coordonnant l'utilisation des différentes ressources de l'ordinateur par les logiciels applicatifs.</p>
+                <p>Lorsque vous utilisez un programme sur votre ordinateur, comme un navigateur web ou un logiciel de traitement de texte, celui-ci communique avec le système d'exploitation pour accéder à la mémoire, au processeur, aux périphériques, etc. Le système d'exploitation gère ces demandes et assure que les ressources sont utilisées de manière efficace, sans interférer les unes avec les autres.</p>
+                <p>En plus de permettre aux programmes de fonctionner, le système d'exploitation offre une gamme de services généraux qui facilitent la création et l'utilisation des logiciels applicatifs. Ces services incluent l'exécution de programmes, la manipulation de fichiers, la communication entre ordinateurs et la détection et gestion des erreurs.</p>
+                <p>Il existe de nombreux systèmes d'exploitation sur le marché, chacun avec ses propres fonctionnalités et adapté à différents types d'appareils, tels que les ordinateurs personnels, les smartphones et les tablettes. Les plus populaires incluent Windows, macOS et Linux.</p>
+
+                <h3>Histoire et Fonctionnement des Systèmes d'Exploitation</h3>
+
+                <p>Les systèmes d'exploitation (OS) sont des logiciels essentiels qui dirigent l'utilisation des ressources d'un ordinateur par les programmes. Leur histoire remonte aux premiers ordinateurs des années 1940 et a évolué avec l'avancement de la technologie.</p>
+                <p>Au départ, les premiers ordinateurs ne possédaient pas de système d'exploitation. Les programmes étaient exécutés directement sur le matériel, nécessitant une intervention humaine pour chaque tâche. Mais avec l'arrivée des circuits électroniques dans les années 1960, les systèmes d'exploitation rudimentaires sont apparus, permettant l'exécution simultanée de plusieurs programmes.</p>
+                <p>Un jalon important a été la création de UNIX en 1969, un système d'exploitation multitâche et multi-utilisateurs, inspirant de nombreux autres systèmes. Les années 1980 ont vu l'essor des micro-ordinateurs et l'émergence de systèmes comme CP/M et MS-DOS, suivis par les interfaces graphiques introduites par Xerox et popularisées par Apple avec le Macintosh.</p>
+                <p>Dans les années 1990, le concept de licence libre est apparu avec GNU/Linux, développé par des bénévoles inspirés par Richard Stallman et Linus Torvalds. Ce modèle a permis l'émergence de systèmes d'exploitation libres et ouverts, offrant une alternative aux solutions propriétaires.</p>
+                <p>Le cœur d'un système d'exploitation est son noyau, qui contrôle l'accès aux ressources matérielles et fournit des services essentiels aux programmes. Il existe différents types de noyaux, tels que les monolithiques, les à micronoyau et les hybrides, chacun avec ses propres avantages et inconvénients.</p>
+                <p>Les systèmes d'exploitation fonctionnent selon le principe de la machine virtuelle, créant une abstraction entre le matériel et les logiciels applicatifs. Ils permettent aux utilisateurs de tirer le meilleur parti de leur matériel informatique en fournissant une interface conviviale et en gérant les ressources de manière efficace.</p>
+                <p>Voici un schéma simple du fonctionnement des systèmes d'exploitation (source : Wikipédia) :</p>
+                <p align="center"><img src="schema_OS.png" width="20%"></p>
+
+                <h3>Les Deux Types de Systèmes d'Exploitation</h3>
+
+                <p><strong>Système d'exploitation propriétaire</strong></p>
+                <p>Un système d'exploitation propriétaire est un logiciel dont la conception, le développement et la distribution sont contrôlés par une entreprise spécifique. Ces entreprises, telles que Microsoft avec son système d'exploitation Windows et Apple avec macOS, détiennent les droits exclusifs sur leur système d'exploitation.</p>
+                <p>Les utilisateurs doivent généralement acheter une licence pour utiliser ces systèmes d'exploitation, ce qui leur donne accès à des fonctionnalités spécifiques et à des mises à jour fournies par l'entreprise propriétaire. Les utilisateurs n'ont pas accès au code source (ou "source code" en anglais) du système d'exploitation, ce qui signifie qu'ils ne peuvent pas le modifier ou le distribuer librement.</p>
+
+                <p><strong>Système d'exploitation libre</strong></p>
+                <p>Un système d'exploitation libre, en revanche, est un logiciel dont le code source est disponible publiquement et peut être modifié, distribué et utilisé librement par quiconque. Les exemples de systèmes d'exploitation libres les plus connus sont Linux et les différentes distributions basées sur Linux, telles que Ubuntu, Fedora et Debian.</p>
+                <p>Les utilisateurs de systèmes d'exploitation libres ont la liberté de modifier le code source selon leurs besoins, de distribuer ces modifications et même de les partager avec d'autres. Cela permet une plus grande flexibilité et une personnalisation selon les préférences individuelles des utilisateurs.</p>
+
+            </div>
+
+            <div id="windows" data-tab-content>
+
+                <h2>Microsoft Windows : Un Système d'Exploitation Propriétaire pour Ordinateurs</h2>
+
+                <p>Microsoft Windows, souvent simplement appelé Windows, est un système d'exploitation développé par Microsoft pour les ordinateurs personnels. Il fournit une interface graphique conviviale qui permet aux utilisateurs d'interagir avec leur ordinateur de manière intuitive.</p>
+                <p align="center"><img src="Windows_logo.png" width="25%"></p>
+                <p>L'histoire de Windows remonte aux premières versions qui étaient essentiellement des extensions graphiques de MS-DOS, le système d'exploitation dominant à l'époque. Au fil du temps, Windows a évolué pour devenir un système d'exploitation complet, offrant une large gamme de fonctionnalités et de services.</p>
+                <p>Les premières versions de Windows, comme Windows 3 (sorti le 22 mai 1990) et Windows 95 (sorti le 24 août 1995), ont introduit des fonctionnalités telles que le multitâche et le support des pilotes de périphériques, ce qui a contribué à populariser l'utilisation des ordinateurs personnels.</p>
+                <p>Au fil des ans, de nouvelles versions de Windows ont été développées pour répondre aux besoins changeants des utilisateurs et aux avancées technologiques. Des versions comme Windows XP, Windows 7, Windows 8 et Windows 10 ont apporté des améliorations significatives en termes de sécurité, de performances et de convivialité.</p>
+                <p>Windows est largement utilisé dans le monde entier et est préinstallé sur la plupart des ordinateurs personnels vendus sur le marché. Il offre une plateforme stable et fiable pour exécuter une variété d'applications et de programmes, qu'il s'agisse de naviguer sur Internet, de traiter des documents ou de jouer à des jeux.</p>
+                <p>Windows est payant parce qu'il s'agit d'un produit développé par Microsoft, une entreprise qui investit des ressources considérables dans la conception, le développement et la maintenance du système d'exploitation. Ces investissements comprennent la recherche et le développement, le support technique, les mises à jour de sécurité et les nouvelles fonctionnalités.</p>
+                <p>Pour financer ces efforts, Microsoft vend des licences pour l'utilisation de Windows. Lorsque vous achetez un ordinateur équipé de Windows préinstallé ou lorsque vous achetez une copie de Windows pour installer sur votre ordinateur, vous payez pour cette licence d'utilisation. Cette licence vous donne le droit d'utiliser Windows sur votre ordinateur, ainsi que le droit de bénéficier du support technique et des mises à jour fournies par Microsoft.</p>
+
+            </div>
+
+            <div id="linux" data-tab-content>
+
+                <h2>Linux : Un Système d'Exploitation Flexible et Ouvert</h2>
+
+                <p>Linux est un système d'exploitation open source qui fonctionne comme le cerveau d'un ordinateur. Il est basé sur le noyau Linux et a été créé en 1991 par Linus Torvalds, un étudiant finlandais, afin de répondre au projet de Richard Stallman de développer un système d'exploitation libre. Ce système d'exploitation est très flexible et peut être utilisé sur différents types d'appareils, comme les ordinateurs, les serveurs, les téléphones portables et même les superordinateurs.</p>
+                <p align="center"><img src="GNU-Linux_logo.png" width="20%"></p>
+                <p>À l'origine, Linux était conçu pour les ordinateurs compatibles PC, mais il est devenu très populaire et est maintenant utilisé dans de nombreux appareils électroniques. Par exemple, le système d'exploitation Android, utilisé sur la plupart des smartphones et tablettes, est basé sur le noyau Linux.</p>
+                <p>La particularité de Linux est qu'il est open source, ce qui signifie que son code source est disponible gratuitement pour tout le monde. Cela permet à quiconque de le modifier et de le distribuer librement, favorisant ainsi la collaboration et l'innovation.</p>
+                <p>Linux est souvent associé au mouvement du logiciel libre, qui promeut la liberté d'utilisation, de modification et de distribution des logiciels. En utilisant Linux, les utilisateurs bénéficient de quatre libertés fondamentales : la liberté d'utiliser, d'étudier, de modifier et de distribuer le logiciel.</p>
+                <p>En résumé, Linux est un système d'exploitation flexible et open source qui peut être utilisé sur divers appareils électroniques. Son code source ouvert encourage la collaboration et l'innovation, et il est associé au mouvement du logiciel libre, promouvant la liberté d'utilisation et de distribution des logiciels.</p>
+
+            </div>
+
+            <div id="macos" data-tab-content>
+
+                <h2>macOS : Le Système d'Exploitation Intuitif d'Apple</h2>
+
+                <p>macOS est un système d'exploitation développé par Apple, disponible sur les ordinateurs Mac depuis 1998. Il est conçu pour offrir une expérience informatique fluide et intuitive aux utilisateurs d'ordinateurs Mac.</p>
+                <p align="center"><img src="macOS_logo.png" width="15%"></p>
+                <p>Les versions les plus récentes de macOS incluent macOS Sonoma, macOS Ventura et macOS Monterey. Elles proposent des fonctionnalités avancées et une intégration transparente avec d'autres produits Apple tels que iOS, iPadOS, watchOS et tvOS.</p>
+                <p>macOS repose sur une base Unix, ce qui lui confère stabilité et sécurité. Il est le successeur de Mac OS Classic, offrant une interface utilisateur moderne et des performances optimisées.</p>
+                <p>Grâce à son architecture robuste, macOS est adapté à une utilisation personnelle et professionnelle. Il prend en charge une large gamme de logiciels et offre des outils intégrés pour la création de contenu, la productivité et bien plus encore.</p>
+                <p>Avec macOS, les utilisateurs bénéficient d'une expérience informatique cohérente et fiable, soutenue par l'écosystème Apple et une communauté de développeurs dynamique.</p>
+                <p>macOS est payant car Apple investit énormément dans la recherche, le développement et la maintenance de macOS pour garantir une expérience utilisateur de haute qualité. Ces investissements comprennent l'amélioration des fonctionnalités, la sécurité, les mises à jour logicielles et le support client.</p>
+                <p>L'achat de macOS contribue à soutenir le modèle économique d'Apple, qui repose en partie sur la vente de logiciels et de matériel. En payant pour macOS, les utilisateurs ont accès à un système d'exploitation fiable et évolutif, ainsi qu'à un ensemble d'outils et de services intégrés qui optimisent l'expérience utilisateur sur les appareils Apple.</p>
+
+            </div>
+
+            <div id="sources" data-tab-content>
+
+                <h2>Sources</h2>
+
+                <ul>
+
+                    <li><a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation">Wikipédia : Système d'exploitation</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Microsoft_Windows">Wikipédia : Microsoft Windows</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Linux">Wikipédia : Linux</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/MacOS">Wikipédia : macOS</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Logiciel_propri%C3%A9taire">Wikipédia : Logiciel propriétaire</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/Logiciel_libre">Wikipédia : Logiciel libre</a></li>
+                    <li>Le cours de NSI</li>
+
+                </ul>
+
+            </div>
+
+        <h2>Section Commentaires</h2>
+
+            <form name="formulaire"> <!-- Attention : ces commentaires ne sont pas sauvegardés et ne sont pas visibles par les autres -->
+
+                <p>
+
+                    <label>Commentaire :</label>
+                    <input type="text" name="input_commentaire"/>
+                    <input type="button" value="Valider" onClick="affiche_commentaire(formulaire)"/>
+
+                </p>
+
+            </form>
+
+            <p id="txt_commentaire"></p> <!-- Affiche le commentaire -->
+
+        </div>
+
+    </body>
+
 </html>
