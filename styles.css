@@ -15,6 +15,7 @@ body {
     color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    text-align: justify;
 }
 
 .tabs {
@@ -36,8 +37,8 @@ body {
 }
 
 .tab-content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
     color: black;
 }
 
