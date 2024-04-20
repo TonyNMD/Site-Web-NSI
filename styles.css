@@ -42,15 +42,6 @@ body {
     color: black;
 }
 
-.logos {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: hsl(220, 24%, 12%);
-}
-
 .logo {
     cursor: pointer;
     padding: 10px;
