@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"); /* Pour utiliser des polices de Google */
 
-[data-tab-content] {
+[data-tab-content] { /* Cache les autres pages */
     display: none;
 }
 
-.active[data-tab-content] {
+.active[data-tab-content] { /* Montre seulement la page voulue */
     display: block;
 }
 
-body {
+body { /* format du corps du site */
     padding: 0;
     margin: 0;
     background-color: hsl(220, 100%, 97%);
@@ -18,7 +18,7 @@ body {
     text-align: justify;
 }
 
-.tabs {
+.tabs { /* format du menu */
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -28,7 +28,7 @@ body {
     font-weight: 600;
 }
 
-.tab {
+.tab { /* format d'une cellule du menu */
     cursor: pointer;
     padding: 10px;
     color: white;
@@ -36,13 +36,13 @@ body {
     padding-bottom: 25px;
 }
 
-.tab-content {
+.tab-content { /* format du contenu du menu */
     margin-left: 70px;
     margin-right: 70px;
     color: black;
 }
 
-.logo {
+.logo { /* format de la cellule contenant le logo LIPPS */
     cursor: pointer;
     padding: 10px;
     color: black;
